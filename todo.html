@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EATSURE</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./todo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header class="header">
+        <a href="avi.html"><img src="./pic9.png" class="logo1"></a><h3>EATSURE</h3>
+        <input type="text" placeholder="search.." class="srh">
+        <nav class="navbar">
+            <div class="dropdown">
+                <a href="#" class="dropbtn">Profile<i class='bx bx-user'></i></a>
+                <div class="dropdown-content">
+                    <a href="#">Orders</a>
+                    <a href="#">Favourites</a>
+                    <a href="#">Edit Profile</a>
+                    <a href="#">Logout</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">Language<i class='bx bxs-book'></i></a>
+                <div class="dropdown-content">
+                    <a href="./avi.html"><i class='bx bxs-circle'></i>English</a>
+                    <a href="./avit.html">Telugu</a>
+                </div>
+            </div>
+            <a href="#">Cart<i class='bx bx-shopping-bag'></i></a>
+            <a href="./todo.html">MY Favourite<i class='bx bxs-heart'></i></a>
+        </nav>
+    </header>
+    <div class="container">
+        <div id="newtask">
+            <input type="text" id="taskinfo" placeholder="My Favourite ...">
+            <button id="add">Add</button>
+        </div>
+        <div id="tasklist"></div>
+    </div> 
+    <footer class="footer">
+        <p class="quote">"Trust in your favorites; they shine bright through every situation."</p>
+    </footer>
+    <script src="./todo.js"></script>
+
+
+    
+</body>
+</html>

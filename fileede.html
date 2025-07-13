@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Structure Flowchart</title>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+  <style>
+    .mermaid {
+      text-align: center;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="mermaid">
+    graph TD
+      A[Project Root] --> B[Assets]
+      A --> C[Source Code (src)]
+      A --> D[Public]
+      A --> E[Package Configuration]
+
+      B --> B1[Images]
+      B --> B2[Fonts]
+      B --> B3[Styles]
+
+      C --> C1[Components]
+      C --> C2[Features]
+      C --> C3[Context]
+      C --> C4[Hooks]
+      C --> C5[Pages]
+      C --> C6[Services]
+      C --> C7[Utils]
+
+      C2 --> F1[Auth]
+      C2 --> F2[Restaurant]
+      C2 --> F3[Cart]
+      C2 --> F4[Tracking]
+
+      F1 --> G1[Login]
+      F1 --> G2[Sign Up]
+      F1 --> G3[Forgot Password]
+
+      F2 --> H1[Search Restaurants]
+      F2 --> H2[Restaurant Details]
+      F2 --> H3[Filters]
+
+      F3 --> I1[Cart View]
+      F3 --> I2[Payment]
+      F3 --> I3[Order Summary]
+
+      F4 --> J1[Track Order]
+      F4 --> J2[Delivery Rating]
+
+      D --> D1[Index.html]
+      D --> D2[Favicon.ico]
+
+      E --> E1[package.json]
+      E --> E2[README.md]
+      E --> E3[.gitignore]
+      E --> E4[webpack.config.js]
+  </div>
+
+  <script>
+    mermaid.initialize({ startOnLoad: true });
+  </script>
+</body>
+</html>
